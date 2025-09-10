@@ -38,8 +38,8 @@ Time smo spojili motore, zatim je potrebno spojiti **Arduino** i **Raspberry**, 
 Kako bi vidjeli na koji način radi prepoznavanje ruke i pokreta poželjno je **Raspberry** spojiti na monitor preko HDMI kabla.
 
 ## Pokretanje i korištenje
-Kako bi pokrenuli šaku potrebno je upaliti **Raspberry**, prijaviti se u njega (_lozinka:1234_) i otvoriti terminal.  
-U terminal je potrebno unijeti sljedeće:  
+Kako bi pokrenuli šaku potrebno je pokrenuti **Raspberry**, na njega skinuti željeni operacijski sustav te podesiti Python environment sa paketima **CVZone** i **Serial**. 
+Nakon toga u terminal je potrebno unijeti sljedeće:  
 ```
 source myenv/bin/activate
 python3 GestureControl.py
