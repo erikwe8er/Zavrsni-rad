@@ -32,7 +32,7 @@ Spajanje motora:
 
 Osim žica za signale potrebno je spojiti i crvenu žicu na pozitivni, te smeđu žicu i **GND** pin na **Arduinu** na negativni izlaz napajanja.
 
-<img width="1110" height="624" alt="Image" src="https://github.com/user-attachments/assets/ad9b512c-f3eb-411f-9080-b7297366bfd9" />
+<img width="1218" height="660" alt="Image" src="https://github.com/user-attachments/assets/b68a7feb-7b43-4f24-b19c-85547818fdf9" />
 
 Time smo spojili motore, zatim je potrebno spojiti **Arduino** i **Raspberry**, kameru i tipkovnicu na **Raspberry** te napajanje, sve navedeno spaja se preko USB-a.
 Kako bi vidjeli na koji način radi prepoznavanje ruke i pokreta poželjno je **Raspberry** spojiti na monitor preko HDMI kabla.
