@@ -38,10 +38,26 @@ Time smo spojili motore, zatim je potrebno spojiti **Arduino** i **Raspberry**, 
 Kako bi vidjeli na koji način radi prepoznavanje ruke i pokreta poželjno je **Raspberry** spojiti na monitor preko HDMI kabla.
 
 ## Pokretanje i korištenje
-Kako bi pokrenuli šaku potrebno je pokrenuti **Raspberry**, na njega skinuti željeni operacijski sustav te podesiti Python environment sa paketima **CVZone** i **Serial**. 
-Nakon toga u terminal je potrebno unijeti sljedeće:  
+Kako bi pokrenuli šaku potrebno je pokrenuti **Raspberry**. U slučaju prvog korištenja potrebno je provjeriti je li **Raspberry** ažuriran. U terminalu je potrebno unijeti sljedeće:
+
 ```
+sudo apt update
+sudo apt upgrade -y
+```
+
+Zatim na njega možemo skinuti željeni operacijski sustav te skinuti **Python**, **Pip** i **Venv**:
+```
+sudo apt install -y python3 python3-pip python3-venv
+```
+Nakon toga možemo stvoriti virtualni python environment i u njemu možemo skinuti **CVZone**, **Serial**, **MediaPipe**, i **OpenCV** :
+```
+python3 -m venv myenv
 source myenv/bin/activate
+pip3 install opencv-python cvzone pyserial mediapipe
+```
+
+Za pokretanje koda u terminal je potrebno unijeti sljedeće:  
+```
 python3 GestureControl.py
 ```
 Nakon unešenih naredbi otvoriti će se prozor koji prikazuje sliku s kamere, kako bi upravljali šakom potrebno je staviti ruku u područje koje kamera vidi,
