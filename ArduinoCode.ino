@@ -24,7 +24,6 @@ void loop() {
         servos[index].write(angle); 
         index++;
         lastComma = i;
-        if (index >= 5);
       }
     }
   }
